@@ -41,12 +41,59 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
-table {
-	border-collapse: collapse;
+ttable {
+    margin: 0 auto;
+    max-width: 960px;
+    border-collapse: collapse;
 }
-tr { 
-  border: solid;
-  border-width: 1px 0;
+table tr th,
+table tr td {
+    padding-top:    4px;
+    padding-bottom: 4px;
+    font-size: 100%;
+    line-height: 150%;
+}
+table tr:not(:last-child) th,
+table tr:not(:last-child) td {
+    border-bottom: 1px solid #80808080;
+}
+table tr th {
+    text-align: right;
+    padding-right: 12px;
+}
+
+
+/* link styling begin  */
+table a:link,
+table a:visited {
+    padding: 2px 10px;
+    color: hsl(190, 81%, 67%);
+    background-color: hsl(0, 100%, 11%);
+    text-decoration: none;
+    outline: none;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 80%;
+    font-weight: bold;
+}
+table a:hover {
+    color: hsl(80, 76%, 53%);
+}
+table a:active {
+    color: hsl(40, 93%, 51%);
+}
+/* link styling end  */
+
+
+tr span.disabled {
+    padding-top: 1px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: hsl(0, 100%, 42%);
+    font-weight: normal;
 }
 
 
